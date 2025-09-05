@@ -27,8 +27,8 @@ A Laravel package that allows developers to restrict and control how many tabs, 
 ## Real-World Use Cases
 
 ### CRM Application Management
-- **Prevent Duplicate Applications**: Stop counselors from accidentally opening the same application in multiple tabs
-- **Role-based Limits**: Counselors can open up to 3 profile tabs but only 1 application at a time
+- **Prevent Duplicate Applications**: Stop users from accidentally opening the same application in multiple tabs
+- **Role-based Limits**: Users can open up to 3 profile tabs but only 1 application at a time
 - **Data Integrity**: Prevent conflicts when multiple tabs try to modify the same application
 
 ### Performance Optimization
@@ -116,7 +116,7 @@ return [
 
     // Role-based rules
     'roles' => [
-        'counselor' => [
+        'user' => [
             'profile' => [
                 'enabled' => true,
                 'max_tabs' => 3,
@@ -343,7 +343,7 @@ TAB_GUARD_DEBUG=false
 #### Healthcare/CRM Application
 ```php
 'roles' => [
-    'counselor' => [
+    'user' => [
         'patient_profile' => [
             'enabled' => true,
             'max_tabs' => 3,
@@ -593,7 +593,7 @@ You can test the package functionality with these examples:
 3. The second tab should be blocked with a limit exceeded message
 
 #### Test Role-based Limits
-1. Login as a counselor
+1. Login as a user
 2. Open 3 profile tabs (should work)
 3. Try to open a 4th profile tab (should be blocked)
 4. Test application tab limit (only 1 allowed)
@@ -651,7 +651,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please email security@example.com instead of using the issue tracker.
+If you discover any security related issues, please email slowestwind@gmail.com instead of using the issue tracker.
 
 ## License
 

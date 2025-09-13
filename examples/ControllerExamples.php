@@ -1,10 +1,29 @@
 <?php
 
+/**
+ * Example Controller Implementations for Laravel Tab Session Guard
+ * 
+ * These are example controllers showing different ways to integrate
+ * the Tab Session Guard package. Add proper imports in your actual implementation.
+ */
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\View\View;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use App\Models\Profile;
+use App\Models\Application;
 use SlowestWind\TabSessionGuard\Services\TabGuardService;
-use TabGuard; // Using facade
+use SlowestWind\TabSessionGuard\Facades\TabGuard;
+
+// Note: This example file may show lint errors because it references
+// models and helper functions that don't exist in the package context.
+// In your actual Laravel application, these would be available.
 
 class ProfileController extends Controller
 {

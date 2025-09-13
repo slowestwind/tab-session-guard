@@ -4,6 +4,19 @@ All notable changes to `laravel-tab-session-guard` will be documented in this fi
 
 ## [Unreleased]
 
+## [1.1.0] - 2025-09-14
+
+### Added
+- Laravel 12.x compatibility
+- Updated PHP requirement to 8.1+ (aligned with Laravel 12 requirements)
+- Enhanced testing support for PHPUnit 11.x
+- Updated Orchestra Testbench to support version 10.x
+
+### Changed
+- Minimum PHP version requirement updated to 8.1
+- Expanded Laravel framework support to include 12.x
+- Updated development dependencies for broader version compatibility
+
 ## [1.0.0] - 2025-09-05
 
 ### Added

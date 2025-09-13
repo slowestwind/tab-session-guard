@@ -41,6 +41,12 @@ A Laravel package that allows developers to restrict and control how many tabs, 
 - **Error Prevention**: Avoid confusion from multiple open instances
 - **Graceful Notifications**: User-friendly messages when limits are reached
 
+## Requirements
+
+- **PHP**: 8.1 or higher
+- **Laravel**: 9.x, 10.x, 11.x, or 12.x
+- **Browser**: Modern browsers with localStorage support
+
 ## Installation
 
 Install the package via Composer:

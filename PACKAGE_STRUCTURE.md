@@ -219,7 +219,7 @@ php artisan tab-guard:cleanup --force
 - **Middleware**: Automatic and manual application
 - **Commands**: 1 Artisan command for maintenance
 - **Views**: 2 customizable Blade templates
-- **Support**: Laravel 9.x, 10.x, 11.x
+- **Support**: Laravel 9.x, 10.x, 11.x, 12.x
 
 ## 🎉 Conclusion
 
